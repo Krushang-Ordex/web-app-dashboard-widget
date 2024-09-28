@@ -1,0 +1,295 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-14 {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.font-16 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.font-18 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.font-24 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.fw-900{
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: 1px solid lightgrey !important;
+    border-radius: 10px !important;
+    padding: 5px 32px 5px 40px !important;
+}
+
+.form-control:hover,
+.btn-icon-section:hover,
+.storage-card:hover {
+    border: 1px solid rgba(135, 206, 250, .5) !important;
+}
+
+.form-control:focus,
+.form-control:active,
+.btn-icon-section:focus,
+.btn-icon-section:active,
+.storage-card:focus,
+.storage-card:active {
+    border: 2px solid rgba(135, 206, 250, 1) !important;
+}
+
+/* Section */
+
+.section {
+    padding: 10px 20px;
+}
+
+/* Searchbar Section */
+
+.searchbar-section .search-field,
+.btn-icon-section {
+    position: relative;
+}
+
+.searchbar-section .search-field .icon-search,
+.searchbar-section .search-field .text-bg-primary {
+    position: absolute;
+}
+
+.searchbar-section .search-field .icon-search {
+    top: 10px;
+    left: 10px;
+}
+
+.searchbar-section .search-field .text-bg-primary {
+    top: 7px;
+    right: 10px;
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 5px;
+}
+
+/* icon setting */
+
+.btn-icon-section {
+    padding: 8px 12px;
+    box-shadow: 5px 5px 3px #00000022;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+/* CardSection - Storage card */
+
+.storage-card{
+    padding: 30px 15px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    width: 96%;
+    justify-content: space-between;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    cursor: pointer;
+}
+
+.storage-card:hover,
+.btn-icon-section:hover{
+    background-color: rgba(135, 206, 250, .5);
+}
+
+.storage-card .card-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.storage-card .card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 8px;
+    color: black;
+}
+
+.storage-card .percentage,
+.storage-card .percentage span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.storage-card .percentage span{
+    font-family: 'Poppins', sans-serif;
+    padding-left: 8px;
+}
+
+.circular-progress-bar .progress-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.card-1 .storage-card .circular-progress-bar .progress-circle {
+    background: conic-gradient(#007bff 32% 0%,
+            #d3e8fd 30% 100%) !important;
+}
+
+.card-2 .storage-card .circular-progress-bar .progress-circle {
+    background: conic-gradient(#007bff 48% 0%,
+            #d3e8fd 48% 100%) !important;
+}
+
+.card-3 .storage-card .circular-progress-bar .progress-circle {
+    background: conic-gradient(#ff0000 89% 0%,
+            #d3e8fd 89% 100%) !important;
+}
+
+.card-4 .storage-card .circular-progress-bar .progress-circle {
+    background: conic-gradient(#007bff 54% 0%,
+            #d3e8fd 54% 100%) !important;
+}
+
+.progress-circle-inner {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 8px;
+    left: 8px;
+}
+
+.progress-circle-value {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.progress-title {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.5rem;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333;
+}
+
+/* Access Card */
+
+.access-card{
+    background-color: rgb(251, 246, 246);
+    min-width: 200px;
+    height: 130px;
+    cursor: pointer;
+}
+
+.access-card:hover{
+    background-color: #ffffff;
+}
+
+.access-card .card-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: black;
+}
+
+.access-card:hover .card-title{
+    color: lightskyblue;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 16px !important;
+    height: 16px !important;
+ }
+
+ .carousel-control-prev{
+    opacity: 0 !important;
+}
+
+ .carousel-control-next{
+    right: -100px !important;
+}
+
+ .carousel-control-next-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+ }
+
+ .carousel-control-prev-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+ }
+
+
+ /* Responsive Design */
+
+ @media screen and (max-width: 1024px) {
+    .carousel-control-next{
+        right: 0px !important;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .storage-card{
+        width: 100% !important;
+    }
+
+    .percentage{
+        text-wrap: balance;
+    }
+ }
+
+ @media screen and (max-width: 420px) {
+    .circular-progress-bar .progress-circle{
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .progress-circle-inner{
+        width: 90% !important;
+        height: 90% !important;
+        top: 3px !important;
+        left: 2.5px !important;
+    }
+
+    .progress-circle-value{
+        font-size: 16px !important;
+    }
+ }
